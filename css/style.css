@@ -63,6 +63,20 @@ section#drops {
   cursor: pointer;
   background-color: #354237;
 }
+
+.drops-buy-btn {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  background-color: #45922f;
+}
 .drops-calculate-content {
   display: flex;
   justify-content: right;

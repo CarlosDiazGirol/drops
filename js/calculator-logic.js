@@ -5,12 +5,23 @@ const getResult     = document.getElementById("drops-result")
 const getDropsImage = document.getElementById("drops-image") 
 const getValues     = document.getElementById("drops-selection")
 const getDrops      = document.getElementById("drops")
+const urlDrops      = document.getElementById("drops-urloil")
+const url = "https://profesorcbd.com"
 const values = {
   "focusResult": ["Leve", "Moderada", "Alta"],
   "pain": ["soft", "medium", "hard"],
   "weight": ["20", "21-38", "29-68", "69-108", "108"],
   "cbd": ["Aceite CBD 5%", "Aceite CBD 5% con GABA", "Aceite CBD 10%", "Aceite CBD 10% con GABA", "Aceite CBD 10% con menta", "Aceite CBD 15%", "Aceite CBD 30%"],
   "images": ["5-2.png", "5gaba.png", "10-3.png", "10gaba.png", "10menta.png", "15-2.png", "30-2.png"],
+  "urls": [
+    "/aceite-cbd-premium-hakuna-oil-5-full-spectrum-base-mct/",
+    "/aceite-cbd-5-premium-hakuna-oil-buenas-nochezzz-con-gaba/",
+    "/aceite-cbd-premium-hakuna-oil-al-10-full-spectrum-con-base-mct/",
+    "/aceite-cbd-10-premium-hakuna-oil-buenas-nochezzz-con-gaba/",
+    "/aceite-cbd-premium-hakuna-oil-al-10-con-aroma-a-menta/",
+    "/aceite-cbd-premium-hakuna-oil-al-15-full-spectrum-con-base-mct/",
+    "/aceite-cbd-premium-hakuna-oil-al-30-full-spectrum-con-base-mct/"
+  ],
   "Aceite CBD 5%": [
     {"soft": ["3", "5", "6", "9", "11"]},
     {"medium": ["5", "6", "8", "11", "15"]},
@@ -32,7 +43,7 @@ const values = {
     {"hard": ["1","2","2","3","4"]}
   ]
 }
-const {weight, focusResult, cbd, pain, images} = values
+const {weight, focusResult, cbd, pain, images, urls} = values
 const [cbd5, cbd5Gaba, cbd10, cbd10Gaba, cbd10Menta, cbd15, cbd30] = images
 const createOptionsWeight = (id, arr) => {
   const text = `<option value="${arr}"`
@@ -109,24 +120,31 @@ const changeProduct = (value) => {
   switch(value) {
     case cbd[0]:
     getDropsImage.innerHTML = `${text} src="${urlIMG}${cbd5}"/>`
+    urlDrops.setAttribute('href', `${url}${urls[0]}`)
     break;
     case cbd[1]:
     getDropsImage.innerHTML = `${text} src="${urlIMG}${cbd5Gaba}"/>`
+    urlDrops.setAttribute('href', `${url}${urls[1]}`)
     break;
     case cbd[2]:
     getDropsImage.innerHTML = `${text} src="${urlIMG}${cbd10}"/>`
+    urlDrops.setAttribute('href', `${url}${urls[2]}`)
     break;
     case cbd[3]:
     getDropsImage.innerHTML = `${text} src="${urlIMG}${cbd10Gaba}"/>`
+    urlDrops.setAttribute('href', `${url}${urls[3]}`)
     break;
     case cbd[4]:
     getDropsImage.innerHTML = `${text} src="${urlIMG}${cbd10Menta}"/>`
+    urlDrops.setAttribute('href', `${url}${urls[4]}`)
     break;
     case cbd[5]:
     getDropsImage.innerHTML = `${text} src="${urlIMG}${cbd15}"/>`
+    urlDrops.setAttribute('href', `${url}${urls[5]}`)
     break;
     case cbd[6]:
     getDropsImage.innerHTML = `${text} src="${urlIMG}${cbd30}"/>`
+    urlDrops.setAttribute('href', `${url}${urls[6]}`)
     break;
   }
 }
