@@ -102,7 +102,7 @@ const result = (focusValor, weightValor, cbdValor) => {
   const weightPosition = weight.indexOf(weightValor)
   const drops = values[changeValue(cbdValor)][focusPosition][pain[focusPosition]][weightPosition]
   getResultValues()
-  const text = `<div class="drops-total"><h4>${drops}</h4>` 
+  const text = `<div style="width:215px !important;" class="drops-total"><h4>${drops}</h4>` 
   switch(drops) {
     case "1":
       getResult.innerHTML = `${text}<p>Gota al día</p></div>`
