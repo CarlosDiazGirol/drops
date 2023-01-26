@@ -7,6 +7,7 @@ const getValues     = document.getElementById("drops-selection")
 const getDrops      = document.getElementById("drops")
 const urlDrops      = document.getElementById("drops-urloil")
 const url = "https://profesorcbd.com"
+const utm = "?utm_medium=display&utm_source=calculadoradosis&utm_campaign=26012023_compratuaceite&utm_content=boton_"
 const values = {
   "focusResult": ["Leve", "Moderada", "Alta"],
   "pain": ["soft", "medium", "hard"],
@@ -14,13 +15,13 @@ const values = {
   "cbd": ["Aceite CBD 5%", "Aceite CBD 5% con GABA", "Aceite CBD 10%", "Aceite CBD 10% con GABA", "Aceite CBD 10% con menta", "Aceite CBD 15%", "Aceite CBD 30%"],
   "images": ["5-2.png", "5gaba.png", "10-3.png", "10gaba.png", "10menta.png", "15-2.png", "30-2.png"],
   "urls": [
-    "/aceite-cbd-premium-hakuna-oil-5-full-spectrum-base-mct/",
-    "/aceite-cbd-5-premium-hakuna-oil-buenas-nochezzz-con-gaba/",
-    "/aceite-cbd-premium-hakuna-oil-al-10-full-spectrum-con-base-mct/",
-    "/aceite-cbd-10-premium-hakuna-oil-buenas-nochezzz-con-gaba/",
-    "/aceite-cbd-premium-hakuna-oil-al-10-con-aroma-a-menta/",
-    "/aceite-cbd-premium-hakuna-oil-al-15-full-spectrum-con-base-mct/",
-    "/aceite-cbd-premium-hakuna-oil-al-30-full-spectrum-con-base-mct/"
+    `/aceite-cbd-premium-hakuna-oil-5-full-spectrum-base-mct/${utm}aceiteFS5`, 
+    `/aceite-cbd-5-premium-hakuna-oil-buenas-nochezzz-con-gaba/${utm}buenasnochez5`,
+    `/aceite-cbd-premium-hakuna-oil-al-10-full-spectrum-con-base-mct/${utm}aceiteFS10`,
+    `/aceite-cbd-10-premium-hakuna-oil-buenas-nochezzz-con-gaba/${utm}buenasnochez10`,
+    `/aceite-cbd-premium-hakuna-oil-al-10-con-aroma-a-menta/${utm}aceitementa`,
+    `/aceite-cbd-premium-hakuna-oil-al-15-full-spectrum-con-base-mct/${utm}FS15`,
+    `/aceite-cbd-premium-hakuna-oil-al-30-full-spectrum-con-base-mct/${utm}FS30`
   ],
   "Aceite CBD 5%": [
     {"soft": ["3", "5", "6", "9", "11"]},

@@ -20,7 +20,7 @@ const calculatorCompose = (drops) => {
                         <select id="weight" class="weight" name="weight"></select>
                         <div class="drops-calculate-content">
                           <input class="drops-calculate" type="button" value="Calcular" onclick="result(getFocus.value, getWeight.value, getCBD.value)" />
-                          <a target="_blank" id="drops-urloil" class="drops-buy-btn" href="https://profesorcbd.com/aceite-cbd-premium-hakuna-oil-5-full-spectrum-base-mct/">Comprar</a>                        
+                          <a target="_blank" id="drops-urloil" class="drops-buy-btn" href="https://profesorcbd.com/aceite-cbd-premium-hakuna-oil-5-full-spectrum-base-mct/?utm_medium=display&utm_source=calculadoradosis&utm_campaign=26012023_compratuaceite&utm_content=boton_aceiteFS5">Comprar</a>                        
                           </div>
                       </div>
                     </div>
